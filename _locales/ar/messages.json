@@ -1,0 +1,53 @@
+{
+    "appName": {
+        "message": "PinMaster"
+    },
+    "version": {
+        "message": "Version 1.0.0"
+    },
+    "subtitle": {
+        "message": "تنزيل جماعي وحافظ الوسائط"
+    },
+    "licensePlaceholder": {
+        "message": "لصق مفتاح الترخيص (XXXX-XXXX-XXXX)"
+    },
+    "activateLicense": {
+        "message": "تفعيل الترخيص"
+    },
+    "getLicenseKey": {
+        "message": "احصل على مفتاح"
+    },
+    "proLicenseActive": {
+        "message": "🛡️ رخصة PRO نشطة"
+    },
+    "fullMetadataMode": {
+        "message": "وضع البيانات الوصفية الكاملة"
+    },
+    "fullMetadataSub": {
+        "message": "جلب روابط 'زيارة الموقع' (أبطأ)"
+    },
+    "downloadBoard": {
+        "message": "⬇️ تحميل اللوحة"
+    },
+    "stopDownload": {
+        "message": "⛔ توقف"
+    },
+    "readyToDownload": {
+        "message": "> جاهز للتنزيل."
+    },
+    "chatSupport": {
+        "message": "💬 دردشة الدعم"
+    },
+    "supportText": {
+        "message": "هل تحتاج مساعدة؟ تحدث معنا. الأولوية لمستخدمي PRO."
+    },
+    "freeLimitReached": {
+        "message": "⚠️ الحد المجاني (50 دبوس)."
+    },
+    "upgradeToPro": {
+        "message": "✨ قم بالترقية إلى PRO للتنزيل غير المحدود!"
+    },
+    "filesSaved": {
+        "message": "تم! تم حفظ {count} ملف."
+    }
+}

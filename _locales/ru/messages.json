@@ -1,0 +1,53 @@
+{
+    "appName": {
+        "message": "PinMaster"
+    },
+    "version": {
+        "message": "Version 1.0.0"
+    },
+    "subtitle": {
+        "message": "Массовый загрузчик и сохранение"
+    },
+    "licensePlaceholder": {
+        "message": "Вставьте ключ лицензии (XXXX-XXXX-XXXX)"
+    },
+    "activateLicense": {
+        "message": "Активировать"
+    },
+    "getLicenseKey": {
+        "message": "Получить ключ"
+    },
+    "proLicenseActive": {
+        "message": "🛡️ PRO ЛИЦЕНЗИЯ АКТИВНА"
+    },
+    "fullMetadataMode": {
+        "message": "Режим полных данных"
+    },
+    "fullMetadataSub": {
+        "message": "Получать ссылки 'Посетить сайт' (Медленнее)"
+    },
+    "downloadBoard": {
+        "message": "⬇️ Скачать доску"
+    },
+    "stopDownload": {
+        "message": "⛔ Стоп"
+    },
+    "readyToDownload": {
+        "message": "> Готов к скачиванию."
+    },
+    "chatSupport": {
+        "message": "💬 Чат поддержки"
+    },
+    "supportText": {
+        "message": "Нужна помощь? Пишите нам. Приоритет для PRO."
+    },
+    "freeLimitReached": {
+        "message": "⚠️ Бесплатный лимит (50 пинов)."
+    },
+    "upgradeToPro": {
+        "message": "✨ Купите PRO для безлимита!"
+    },
+    "filesSaved": {
+        "message": "Готово! {count} файлов сохранено."
+    }
+}

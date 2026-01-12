@@ -1,0 +1,90 @@
+{
+    "manifest_version": 3,
+    "name": "PinMaster - Bulk Image Downloader",
+    "author": "InYogeshwar Digital",
+    "version": "1.0.0",
+    "default_locale": "en",
+    "description": "Download all pins from any Pinterest board in bulk with section support and Excel export.",
+    "permissions": [
+        "storage",
+        "downloads",
+        "activeTab",
+        "scripting",
+        "tabs",
+        "alarms"
+    ],
+    "host_permissions": [
+        "*://*.pinterest.com/*",
+        "*://*.pinimg.com/*",
+        "*://*.pinterest.co.uk/*",
+        "*://*.pinterest.fr/*",
+        "*://*.pinterest.de/*",
+        "*://*.pinterest.es/*",
+        "*://*.pinterest.it/*",
+        "*://*.pinterest.jp/*",
+        "*://*.pinterest.ca/*",
+        "*://*.pinterest.com.au/*",
+        "*://*.pinterest.in/*",
+        "*://*.pinterest.mx/*",
+        "*://*.pinterest.se/*",
+        "*://*.pinterest.dk/*",
+        "*://*.pinterest.no/*",
+        "*://*.pinterest.pt/*",
+        "*://*.pinterest.ru/*",
+        "*://*.pinterest.kr/*",
+        "*://*.pinterest.ph/*",
+        "*://*.pinterest.nz/*",
+        "*://*.pinterest.cl/*",
+        "*://*.pinterest.com.mx/*",
+        "https://api.gumroad.com/*"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "icons/icon16.png",
+            "32": "icons/icon32.png",
+            "48": "icons/icon48.png",
+            "128": "icons/icon128.png"
+        }
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*.pinterest.com/*",
+                "*://*.pinterest.co.uk/*",
+                "*://*.pinterest.fr/*",
+                "*://*.pinterest.de/*",
+                "*://*.pinterest.es/*",
+                "*://*.pinterest.it/*",
+                "*://*.pinterest.jp/*",
+                "*://*.pinterest.ca/*",
+                "*://*.pinterest.com.au/*",
+                "*://*.pinterest.in/*",
+                "*://*.pinterest.mx/*",
+                "*://*.pinterest.se/*",
+                "*://*.pinterest.dk/*",
+                "*://*.pinterest.no/*",
+                "*://*.pinterest.pt/*",
+                "*://*.pinterest.ru/*",
+                "*://*.pinterest.kr/*",
+                "*://*.pinterest.ph/*",
+                "*://*.pinterest.nz/*",
+                "*://*.pinterest.cl/*",
+                "*://*.pinterest.com.mx/*"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "run_at": "document_idle"
+        }
+    ],
+    "icons": {
+        "16": "icons/icon16.png",
+        "32": "icons/icon32.png",
+        "48": "icons/icon48.png",
+        "128": "icons/icon128.png"
+    }
+}

@@ -1,0 +1,53 @@
+{
+    "appName": {
+        "message": "PinMaster"
+    },
+    "version": {
+        "message": "Version 1.0.0"
+    },
+    "subtitle": {
+        "message": "一括ダウンローダー＆メディアセーバー"
+    },
+    "licensePlaceholder": {
+        "message": "ライセンスキーを貼り付け (XXXX-XXXX-XXXX)"
+    },
+    "activateLicense": {
+        "message": "ライセンス有効化"
+    },
+    "getLicenseKey": {
+        "message": "キーを取得"
+    },
+    "proLicenseActive": {
+        "message": "🛡️ PROライセンス有効"
+    },
+    "fullMetadataMode": {
+        "message": "完全メタデータモード"
+    },
+    "fullMetadataSub": {
+        "message": "「サイトへ移動」リンクを取得 (低速)"
+    },
+    "downloadBoard": {
+        "message": "⬇️ ボードをダウンロード"
+    },
+    "stopDownload": {
+        "message": "⛔ 停止"
+    },
+    "readyToDownload": {
+        "message": "> ダウンロード準備完了。"
+    },
+    "chatSupport": {
+        "message": "💬 サポートチャット"
+    },
+    "supportText": {
+        "message": "ヘルプが必要ですか？チャットしてください。PROユーザー優先。"
+    },
+    "freeLimitReached": {
+        "message": "⚠️ 無料制限 (50ピン)。"
+    },
+    "upgradeToPro": {
+        "message": "✨ PROにアップグレードして無制限に！"
+    },
+    "filesSaved": {
+        "message": "完了！ {count} ファイル保存されました。"
+    }
+}

@@ -1,0 +1,53 @@
+{
+    "appName": {
+        "message": "PinMaster"
+    },
+    "version": {
+        "message": "Version 1.0.0"
+    },
+    "subtitle": {
+        "message": "Massen-Downloader & Medienspeicher"
+    },
+    "licensePlaceholder": {
+        "message": "Lizenzschlüssel eingeben (XXXX-XXXX-XXXX)"
+    },
+    "activateLicense": {
+        "message": "Lizenz aktivieren"
+    },
+    "getLicenseKey": {
+        "message": "Lizenz holen"
+    },
+    "proLicenseActive": {
+        "message": "🛡️ PRO LIZENZ AKTIV"
+    },
+    "fullMetadataMode": {
+        "message": "Vollständiger Metadaten-Modus"
+    },
+    "fullMetadataSub": {
+        "message": "'Seite besuchen'-Links abrufen (Langsamer)"
+    },
+    "downloadBoard": {
+        "message": "⬇️ Board herunterladen"
+    },
+    "stopDownload": {
+        "message": "⛔ Stopp"
+    },
+    "readyToDownload": {
+        "message": "> Bereit zum Herunterladen."
+    },
+    "chatSupport": {
+        "message": "💬 Support-Chat"
+    },
+    "supportText": {
+        "message": "Brauchen Sie Hilfe? Chatten Sie mit uns. PRO-Nutzer haben Vorrang."
+    },
+    "freeLimitReached": {
+        "message": "⚠️ Kostenloses Limit (50 Pins)."
+    },
+    "upgradeToPro": {
+        "message": "✨ Upgrade auf PRO für unbegrenzte Downloads!"
+    },
+    "filesSaved": {
+        "message": "Fertig! {count} Dateien gespeichert."
+    }
+}

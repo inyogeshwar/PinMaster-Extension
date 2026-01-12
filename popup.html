@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PinVault Pro</title>
+    <style>
+        :root {
+            --primary: #00ac47;
+            /* Pinterest Green but vibrant */
+            --danger: #e60023;
+            --bg: #121212;
+            --card: #1e1e1e;
+            --text: #ffffff;
+            --text-muted: #a0a0a0;
+            --border: #333333;
+        }
+
+        body {
+            width: 340px;
+            margin: 0;
+            padding: 16px;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            /* Subtle Mesh Gradient Background */
+            background-image: radial-gradient(circle at 10% 10%, #1a1a1a 0%, #121212 90%);
+        }
+
+        /* Typography */
+        h2 {
+            font-size: 18px;
+            font-weight: 700;
+            margin: 0 0 4px 0;
+            letter-spacing: -0.5px;
+            background: linear-gradient(90deg, #fff, #bbb);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-align: center;
+        }
+
+        .subtitle {
+            text-align: center;
+            font-size: 11px;
+            color: var(--text-muted);
+            margin-bottom: 20px;
+        }
+
+        /* Container */
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        /* License Card */
+        .card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px 12px;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+            background: #252525;
+            color: white;
+            font-size: 13px;
+            outline: none;
+            box-sizing: border-box;
+            transition: border-color 0.2s;
+        }
+
+        input[type="text"]:focus {
+            border-color: var(--primary);
+        }
+
+        /* Buttons */
+        button {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 13px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+        }
+
+        button:hover {
+            transform: translateY(-1px);
+            filter: brightness(1.1);
+        }
+
+        button:active {
+            transform: translateY(1px);
+        }
+
+        #verifyBtn {
+            background-color: transparent;
+            border: 1px solid var(--border);
+            color: var(--text);
+            margin-top: 8px;
+        }
+
+        #verifyBtn:hover {
+            background-color: #2a2a2a;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #00ac47 0%, #008a39 100%);
+            color: white;
+            box-shadow: 0 4px 12px rgba(0, 172, 71, 0.3);
+        }
+
+        .btn-danger {
+            background: linear-gradient(135deg, #e60023 0%, #b3001b 100%);
+            color: white;
+            box-shadow: 0 4px 12px rgba(230, 0, 35, 0.3);
+        }
+
+        /* Checkbox */
+        .checkbox-wrapper {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            padding: 8px 12px;
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .checkbox-wrapper:hover {
+            background: rgba(255, 255, 255, 0.06);
+        }
+
+        .checkbox-wrapper input {
+            margin-top: 3px;
+            accent-color: var(--primary);
+        }
+
+        .checkbox-label {
+            font-size: 12px;
+            color: #ddd;
+            line-height: 1.4;
+        }
+
+        .checkbox-sub {
+            display: block;
+            font-size: 10px;
+            color: var(--text-muted);
+        }
+
+        /* Status & Log */
+        #status {
+            text-align: center;
+            font-size: 13px;
+            font-weight: 500;
+            min-height: 20px;
+            color: var(--text);
+        }
+
+        .log-console {
+            background: #000;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 10px;
+            height: 100px;
+            overflow-y: auto;
+            font-family: 'Consolas', 'Monaco', monospace;
+            font-size: 10px;
+            color: #4da6ff;
+            line-height: 1.5;
+        }
+
+        .log-console::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        .log-console::-webkit-scrollbar-thumb {
+            background: #333;
+            border-radius: 3px;
+        }
+
+        /* Verified Badge */
+        .verified-badge {
+            background: rgba(0, 172, 71, 0.15);
+            color: #00e676;
+            border: 1px solid rgba(0, 172, 71, 0.3);
+            text-align: center;
+            padding: 10px;
+            border-radius: 8px;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+        }
+
+        /* Footer */
+        .footer {
+            margin-top: 12px;
+            padding-top: 12px;
+            border-top: 1px solid #222;
+            text-align: center;
+        }
+
+        .footer-link {
+            color: var(--text-muted);
+            font-size: 11px;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .footer-link:hover {
+            color: white;
+        }
+
+        /* Utilities */
+        .hidden {
+            display: none !important;
+        }
+
+        /* Progress Bar override */
+        progress {
+            width: 100%;
+            height: 6px;
+            border-radius: 3px;
+            appearance: none;
+        }
+
+        progress::-webkit-progress-bar {
+            background-color: #333;
+            border-radius: 3px;
+        }
+
+        progress::-webkit-progress-value {
+            background-color: var(--primary);
+            border-radius: 3px;
+            box-shadow: 0 0 10px rgba(0, 172, 71, 0.5);
+        }
+
+        /* Language Selector */
+        .language-selector {
+            background: #252525;
+            color: #ccc;
+            border: 1px solid #333;
+            border-radius: 4px;
+            padding: 4px;
+            font-size: 11px;
+            outline: none;
+        }
+
+        /* Support Button */
+        .support-btn {
+            background-color: #333;
+            color: #fff;
+            border: 1px solid #444;
+            margin-bottom: 8px;
+        }
+
+        .support-btn:hover {
+            background-color: #444;
+        }
+
+        .support-text {
+            font-size: 10px;
+            color: #888;
+            line-height: 1.4;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Language Selector -->
+        <div id="languageSelectorContainer" style="text-align: right; margin-bottom: 8px;"></div>
+
+        <!-- Header -->
+        <div>
+            <h2 data-i18n="appName">PinVault Pro</h2>
+            <div class="subtitle" data-i18n="subtitle">Bulk Downloader & Media Saver</div>
+        </div>
+
+        <!-- License Section -->
+        <div id="licenseSection" class="card">
+            <input type="text" id="licenseKey" data-i18n="licensePlaceholder"
+                placeholder="Paste License Key (XXXX-XXXX-XXXX)">
+            <button id="verifyBtn" data-i18n="activateLicense">Activate License</button>
+            <div style="margin-top: 8px; text-align: center;">
+                <a href="https://inyogeshwar.gumroad.com/l/pinvault-pro" target="_blank"
+                    style="color: #4da6ff; font-size: 11px; text-decoration: none;" data-i18n="getLicenseKey">Get a
+                    License Key</a>
+            </div>
+        </div>
+
+        <!-- Verified Badge -->
+        <div id="licenseVerifiedBadge" class="verified-badge hidden" data-i18n="proLicenseActive">
+            <span>🛡️</span> PRO LICENSE ACTIVE
+        </div>
+
+        <!-- Controls -->
+        <div>
+            <label class="checkbox-wrapper">
+                <input type="checkbox" id="fetchVisitSite" checked>
+                <div class="checkbox-label">
+                    <span data-i18n="fullMetadataMode">Full Metadata Mode</span>
+                    <span class="checkbox-sub" data-i18n="fullMetadataSub">Fetch "Visit Site" links & full descriptions
+                        (Slower)</span>
+                </div>
+            </label>
+
+            <div id="progressBox" class="hidden" style="margin-top: 12px; margin-bottom: 8px;">
+                <progress id="progressBar" value="0" max="100"></progress>
+                <div id="progressText" style="text-align: right; font-size: 11px; color: #888; margin-top: 4px;">0%
+                </div>
+            </div>
+
+            <div style="margin-top: 12px;">
+                <button id="downloadBtn" class="btn-primary">
+                    <span data-i18n="downloadBoard">⬇️ Download Board</span>
+                </button>
+                <button id="stopBtn" class="btn-danger hidden">
+                    <span data-i18n="stopDownload">⛔ Stop Download</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Log Area -->
+        <div id="logArea" class="log-console">
+            <span data-i18n="readyToDownload">> Ready to download.</span>
+        </div>
+
+        <div id="status"></div>
+
+        <div class="footer">
+            <button id="supportBtn" class="support-btn" data-i18n="chatSupport">
+                💬 Chat with Support
+            </button>
+            <div class="support-text" data-i18n="supportText">
+                Need help? Chat with us live.<br>
+                Pro users get priority support
+            </div>
+            <div style="margin-top: 8px;">
+                <a href="#" class="footer-link" data-i18n="version">Version 2.0.0</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="config.js"></script>
+    <script src="lib/i18n.js"></script>
+    <script src="popup.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+{
+    "appName": {
+        "message": "PinMaster"
+    },
+    "version": {
+        "message": "Version 1.0.0"
+    },
+    "subtitle": {
+        "message": "批量下载器和媒体保存器"
+    },
+    "licensePlaceholder": {
+        "message": "粘贴许可证密钥 (XXXX-XXXX-XXXX)"
+    },
+    "activateLicense": {
+        "message": "激活许可证"
+    },
+    "getLicenseKey": {
+        "message": "获取密钥"
+    },
+    "proLicenseActive": {
+        "message": "🛡️ PRO 许可证已激活"
+    },
+    "fullMetadataMode": {
+        "message": "完整元数据模式"
+    },
+    "fullMetadataSub": {
+        "message": "获取“访问网站”链接（较慢）"
+    },
+    "downloadBoard": {
+        "message": "⬇️ 下载面板"
+    },
+    "stopDownload": {
+        "message": "⛔ 停止"
+    },
+    "readyToDownload": {
+        "message": "> 准备下载。"
+    },
+    "chatSupport": {
+        "message": "💬 支持聊天"
+    },
+    "supportText": {
+        "message": "需要帮助吗？与我们聊天。PRO 用户优先。"
+    },
+    "freeLimitReached": {
+        "message": "⚠️ 免费限制（50 个 Pin）。"
+    },
+    "upgradeToPro": {
+        "message": "✨ 升级到 PRO 以获得无限下载！"
+    },
+    "filesSaved": {
+        "message": "完成！已保存 {count} 个文件。"
+    }
+}

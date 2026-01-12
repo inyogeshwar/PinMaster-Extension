@@ -1,0 +1,53 @@
+{
+    "appName": {
+        "message": "PinMaster"
+    },
+    "version": {
+        "message": "Version 1.0.0"
+    },
+    "subtitle": {
+        "message": "대량 다운로더 및 미디어 저장"
+    },
+    "licensePlaceholder": {
+        "message": "라이선스 키 붙여넣기 (XXXX-XXXX-XXXX)"
+    },
+    "activateLicense": {
+        "message": "라이선스 활성화"
+    },
+    "getLicenseKey": {
+        "message": "키 받기"
+    },
+    "proLicenseActive": {
+        "message": "🛡️ PRO 라이선스 활성"
+    },
+    "fullMetadataMode": {
+        "message": "전체 메타데이터 모드"
+    },
+    "fullMetadataSub": {
+        "message": "'사이트 방문' 링크 가져오기 (느림)"
+    },
+    "downloadBoard": {
+        "message": "⬇️ 보드 다운로드"
+    },
+    "stopDownload": {
+        "message": "⛔ 중지"
+    },
+    "readyToDownload": {
+        "message": "> 다운로드 준비 완료."
+    },
+    "chatSupport": {
+        "message": "💬 지원 채팅"
+    },
+    "supportText": {
+        "message": "도움이 필요하세요? PRO 사용자 우선 지원."
+    },
+    "freeLimitReached": {
+        "message": "⚠️ 무료 제한 (50 핀)."
+    },
+    "upgradeToPro": {
+        "message": "✨ 무제한 다운로드를 위해 PRO로 업그레이드하세요!"
+    },
+    "filesSaved": {
+        "message": "완료! {count} 파일 저장됨."
+    }
+}

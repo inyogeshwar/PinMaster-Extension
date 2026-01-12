@@ -1,0 +1,53 @@
+{
+    "appName": {
+        "message": "PinMaster"
+    },
+    "version": {
+        "message": "Version 1.0.0"
+    },
+    "subtitle": {
+        "message": "Descargador Masivo y Guardar Medios"
+    },
+    "licensePlaceholder": {
+        "message": "Pegar Clave de Licencia (XXXX-XXXX-XXXX)"
+    },
+    "activateLicense": {
+        "message": "Activar Licencia"
+    },
+    "getLicenseKey": {
+        "message": "Obtener Clave"
+    },
+    "proLicenseActive": {
+        "message": "🛡️ LICENCIA PRO ACTIVA"
+    },
+    "fullMetadataMode": {
+        "message": "Modo Metadatos Completos"
+    },
+    "fullMetadataSub": {
+        "message": "Obtener enlaces 'Visitar Sitio' (Más lento)"
+    },
+    "downloadBoard": {
+        "message": "⬇️ Descargar Tablero"
+    },
+    "stopDownload": {
+        "message": "⛔ Detener"
+    },
+    "readyToDownload": {
+        "message": "> Listo para descargar."
+    },
+    "chatSupport": {
+        "message": "💬 Chat de Soporte"
+    },
+    "supportText": {
+        "message": "¿Necesitas ayuda? Chatea con nosotros. Prioridad para usuarios PRO."
+    },
+    "freeLimitReached": {
+        "message": "⚠️ Límite Gratuito (50 Pines)."
+    },
+    "upgradeToPro": {
+        "message": "✨ ¡Obtén PRO para descargas ilimitadas!"
+    },
+    "filesSaved": {
+        "message": "¡Hecho! {count} archivos guardados."
+    }
+}

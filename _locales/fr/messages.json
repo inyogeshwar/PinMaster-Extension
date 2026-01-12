@@ -1,0 +1,53 @@
+{
+    "appName": {
+        "message": "PinMaster"
+    },
+    "version": {
+        "message": "Version 1.0.0"
+    },
+    "subtitle": {
+        "message": "Téléchargeur en masse et économiseur"
+    },
+    "licensePlaceholder": {
+        "message": "Coller la clé de licence (XXXX-XXXX-XXXX)"
+    },
+    "activateLicense": {
+        "message": "Activer la licence"
+    },
+    "getLicenseKey": {
+        "message": "Obtenir une clé"
+    },
+    "proLicenseActive": {
+        "message": "🛡️ LICENCE PRO ACTIVE"
+    },
+    "fullMetadataMode": {
+        "message": "Mode Métadonnées Complètes"
+    },
+    "fullMetadataSub": {
+        "message": "Récupérer les liens 'Visiter le site' (Plus lent)"
+    },
+    "downloadBoard": {
+        "message": "⬇️ Télécharger"
+    },
+    "stopDownload": {
+        "message": "⛔ Arrêter"
+    },
+    "readyToDownload": {
+        "message": "> Prêt à télécharger."
+    },
+    "chatSupport": {
+        "message": "💬 Discuter avec le support"
+    },
+    "supportText": {
+        "message": "Besoin d'aide ? Discutez avec nous. Priorité aux utilisateurs PRO."
+    },
+    "freeLimitReached": {
+        "message": "⚠️ Limite Gratuite (50 Épingles)."
+    },
+    "upgradeToPro": {
+        "message": "✨ Passez en PRO pour l'illimité !"
+    },
+    "filesSaved": {
+        "message": "Fini ! {count} fichiers enregistrés."
+    }
+}

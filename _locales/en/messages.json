@@ -1,0 +1,53 @@
+{
+    "appName": {
+        "message": "PinMaster"
+    },
+    "subtitle": {
+        "message": "Bulk Downloader & Media Saver"
+    },
+    "licensePlaceholder": {
+        "message": "Paste License Key (XXXX-XXXX-XXXX)"
+    },
+    "activateLicense": {
+        "message": "Activate License"
+    },
+    "getLicenseKey": {
+        "message": "Get a License Key"
+    },
+    "proLicenseActive": {
+        "message": "🛡️ PRO LICENSE ACTIVE"
+    },
+    "fullMetadataMode": {
+        "message": "Full Metadata Mode"
+    },
+    "fullMetadataSub": {
+        "message": "Fetch \"Visit Site\" links & full descriptions (Slower)"
+    },
+    "downloadBoard": {
+        "message": "⬇️ Download Board"
+    },
+    "stopDownload": {
+        "message": "⛔ Stop Download"
+    },
+    "readyToDownload": {
+        "message": "> Ready to download."
+    },
+    "chatSupport": {
+        "message": "💬 Chat with Support"
+    },
+    "supportText": {
+        "message": "Need help? Chat with us live. Pro users get priority support"
+    },
+    "version": {
+        "message": "Version 1.0.0"
+    },
+    "freeLimitReached": {
+        "message": "⚠️ Free Limit Reached (50 Pins)."
+    },
+    "upgradeToPro": {
+        "message": "✨ Upgrade to PRO for unlimited downloads!"
+    },
+    "filesSaved": {
+        "message": "Done! {count} Files saved."
+    }
+}
